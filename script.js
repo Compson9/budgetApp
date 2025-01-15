@@ -50,7 +50,7 @@ formEl.addEventListener("submit", function(e){
     //   update Balance
 const income = +numberIncomeEl.textContent;
 const expenses = +numberExpensesEl.textContent;
-updateBalance = income + expenses
+const updateBalance = income + expenses
 balanceNumberEl.textContent = updateBalance
 
 
@@ -82,7 +82,7 @@ transactionEl.addEventListener("click", function removeItem(e) {
 //   update Balance
 const income = +numberIncomeEl.textContent;
 const expenses = +numberExpensesEl.textContent;
-updateBalance = income - expenses
+const updateBalance = income - expenses
 balanceNumberEl.textContent = updateBalance
 
 // check if balance is negative 
