@@ -50,8 +50,13 @@ formEl.addEventListener("submit", function(e){
     //   update Balance
 const income = +numberIncomeEl.textContent;
 const expenses = +numberExpensesEl.textContent;
-const updateBalance = income + expenses
+const updateBalance = income - expenses
 balanceNumberEl.textContent = updateBalance
+
+// check if balance is negative 
+if(updateBalance <= 0){
+    balanceNumberEl.style.color = "red"
+}
 
 
 })
