@@ -49,9 +49,9 @@ function submitHandler(e) {
     balanceNumberEl.textContent = updateBalance;
 
     // check if balance is negative
-    if (updateBalance <= 0) {
-        balanceNumberEl.style.color = "red";
-    }
+    // if (updateBalance <= 0) {
+    //     balanceNumberEl.style.color = "red";
+    // }
 }
 
 // submit form
