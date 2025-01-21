@@ -90,3 +90,20 @@ transactionEl.addEventListener("click", function removeItem(e) {
         balanceNumberEl.style.color = "red";
     }
 });
+
+
+function calculatFarenheit(c){
+    const f = (c * 9/5) + 32;
+    return f;
+}
+
+
+
+const result = calculatFarenheit(-7.6)
+console.log(result);
+
+if(f > 18){
+    console.log("The weather is cold")
+} else {
+    console.log("The weather is warm")
+}
