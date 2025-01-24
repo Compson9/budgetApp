@@ -99,11 +99,3 @@ function calculatFarenheit(c){
 
 
 
-const result = calculatFarenheit(-7.6)
-console.log(result);
-
-if(f > 18){
-    console.log("The weather is cold")
-} else {
-    console.log("The weather is warm")
-}
