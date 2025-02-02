@@ -86,15 +86,23 @@
 //     }
 // });
 
+// remove function 
 
-const title = document.querySelector(".first-heading");
 
-const balanceNumber= document.querySelector(".balance-number");
+// Selecting the items from the html
+const transactionEl = document.querySelector(".transactions");
 
-balanceNumber.addEventListener("click",  clickHandler =()=>{
-    
-    balanceNumber.innerHTML = '<h1>Unavailable</h1>'
+
+transactionEl.addEventListener("click", function handleRemove(event){
+    // Remove the transaction from the screen
+    const clickedEl = event.target.parentNode;
+    clickedEl.remove();
+
+    // update the income or expenses
+
 })
+
+
 
 
 
