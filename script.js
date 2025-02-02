@@ -86,21 +86,38 @@
 //     }
 // });
 
-// remove function 
+
 
 
 // Selecting the items from the html
 const transactionEl = document.querySelector(".transactions");
+const balanceNumberEl = document.querySelector(".balance-number");
+const numberIncomeEl = document.querySelector(".number--income");
+const numberExpensesEl = document.querySelector(".number--expenses");
+const formEl = document.querySelector(".form");
+const inputDescriptionEl = document.querySelector(".input--description");
+const inputAmountEl = document.querySelector(".input--amount");
 
 
-transactionEl.addEventListener("click", function handleRemove(event){
-    // Remove the transaction from the screen
+
+// Remove transaction element
+transactionEl.addEventListener("click", function(event){
     const clickedEl = event.target.parentNode;
     clickedEl.remove();
 
     // update the income or expenses
+    const amountEl = clickedEl.querySelector(".transaction__amount");
+    const amount = +amountEl.textContent;
+
+
+const currentIncome = +numberIncomeEl.textContent
+const updatedIncome = currentIncome - amount 
+numberIncomeEl.textContent = updatedIncome
 
 })
+
+
+
 
 
 
